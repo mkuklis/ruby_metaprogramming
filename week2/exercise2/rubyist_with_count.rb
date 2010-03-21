@@ -15,10 +15,8 @@ class Rubyist
   
   alias_method_chain(:say!, :count) do |method, punctuation|
     p "***called alias_method_chain***"
-    
-    p "aliased_target is: #{aliased_target}"
+    p "aliased_target is: #{method}"
     p "punctuation is: #{punctuation}"
-
   end
 end
 
